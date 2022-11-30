@@ -1,0 +1,29 @@
+const description = [
+	"you specify a bar line or a note and the string
+	that it's on and the spacing and it will add the 
+	spacing and notes.",
+
+	"it chunks each step so you can undo. saves each 
+	step you took in an array and removes the last 
+	step.",
+
+	"returns a set of properties, one for each string,
+	that can be pasted into data.js",
+
+	"highlights the notes on the fretboard to show the 
+	localized area of the notes on the fretboard"
+];
+
+const elements = {
+	1: "canvas; monitor current tab state",
+	2: "add string [input. save/submit button]",
+	3: "add note [specify string && fret && spacing] [drop-down menu for string selection. input for fret or note. input for spacing. save/submit button]",
+	4: "add decoration [slide:  \, /; bar line: |; vibrato: ~; bend: ↑;]"
+};
+
+const logic = {
+	0: "logic will revolve around the canvas and focusing on it's functions",
+	1: "save each step in an array to undo; each step is saved as an object question mark?",
+	2: "before adding new string check if string already exists [case sensitive]",
+	3: ""
+};
