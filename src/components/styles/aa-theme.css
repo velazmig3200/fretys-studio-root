@@ -1,0 +1,35 @@
+:root {
+	--dark: hsl(192, 71%, 23%);
+	--darkA: hsla(200, 50%, 22%, 0.9);
+	--dark2: hsla(150, 78%, 10%);
+	--main: hsl(150, 48%, 57%);
+	--mainA: hsla(150, 51%, 29%, 0.85);
+	--main2: hsl(170, 48%, 57%);
+	--highlight: palevioletred;
+	--highlightA: hsla(340, 42%, 28%, 0.9);
+	/* --highlight2: hsl(60, 100%, 71%);  */
+	--highlight2: hsl(59, 100%, 70%);
+
+	--black: #000;
+	--white: hsl(60, 100%, 98%);
+	--darkGray: #222;
+	--gray: #666;
+	--lightGray: hsl(32, 10%, 74%);
+	--debug: rgba(255, 0, 0, 0.2);
+
+	color: var(--white);
+	/* background-color: var(--dark2); */
+	background-color: var(--black);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	/* outline: 1px dotted red; */
+}
+body {
+	margin-top: 0.7rem;
+	margin-left: 0.7rem;
+	margin-right: 0.7rem;
+}

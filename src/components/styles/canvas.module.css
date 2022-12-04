@@ -1,0 +1,89 @@
+@import url("aa-theme.css");
+
+kbd {
+	border: 0.1rem solid black;
+	background-color: var(--gray);
+	border-radius: 0.3rem;
+	padding: 0.1rem 0.2rem;
+	color: var(--white);
+	text-shadow: 3px 3px 1px black;
+}
+input {
+	/*spacing*/
+	padding: 0.1rem 0.4rem;
+	width: 6rem;
+	margin-right: 0.3rem;
+	/*attr*/
+	border-radius: 0.2rem;
+	background-color: var(--lightGray);
+}
+button {
+	/*spacing*/
+	padding: 0.1rem 0.7rem;
+	/*text*/
+	color: var(--white);
+	/*attr*/
+	border-bottom: 0.1rem solid var(--white);
+	border-radius: 0.2rem 0.2rem 0 0;
+	background-color: var(--darkGray);
+	transition: all 0.1s;
+}
+button:hover {
+	box-shadow: 0 0 0.8rem var(--highlight);
+}
+section {
+	margin-bottom: 1rem;
+	/* outline: 1px dotted #0f0; */
+}
+
+.header {
+	margin-bottom: 1rem;
+	margin-left: -0.4rem;
+}
+
+.inputStrings {
+	margin-bottom: 0.3rem;
+}
+.inputNotes:focus {
+	background-color: rgba(180, 0, 0, 0.5);
+	outline: 0.1rem solid var(--highlight);
+	color: white;
+}
+
+.canvasContainer {
+	overflow-x: auto;
+}
+.canvas {
+	/*spacing*/
+	width: max-content;
+	margin-right: 3rem;
+	padding: 0 0.6rem;
+	/*text*/
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.7rem;
+	/*attr*/
+	border-radius: 0.2rem;
+	transition: all 0.7s;
+}
+.active {
+	background-color: var(--dark);
+	text-shadow: 5px 5px 2px black;
+}
+.margin {
+	margin-left: 1rem;
+}
+
+.stickyLegend {
+	/*spacing*/
+	position: sticky;
+	bottom: -0.1rem;
+	padding: 0.2rem 0.7rem;
+	/*text*/
+	color: #ddd;
+	/*attr*/
+	background-color: var(--darkGray);
+	border-radius: 0.2rem;
+}
+.legendContainer > p {
+	margin: 0.3rem 0;
+}

@@ -1,21 +1,30 @@
 import React from "react";
+import cc from "./styles/classChain";
 
-function Canvas({ strings }) {
+function Canvas({ strings, activeS, noteVal, canvasRef }) {
 	let elements = [];
-	const str = obj => Object.keys(obj)[0];
 
 	//loop through the strings
 	for (let i in strings) {
 		elements.push(
-			<p key={i}>
-				{strings[i].name}
-				|-
-				{strings[i].tab}
-				-|
+			<p
+				key={i}
+				className={cc(
+					"canvas",
+					`canvas ${activeS == strings[i].name}?active 
+                    ${strings[i].name.length < 2}?margin`
+				)}>
+				{strings[i].name}|-{strings[i].tab}
+				{activeS == strings[i].name && noteVal}|
 			</p>
 		);
 	}
-	return <section>Canvas{elements}</section>;
+
+	return (
+		<section ref={canvasRef} className={cc("canvas", "canvasContainer")}>
+			{elements}
+		</section>
+	);
 }
 
 export default Canvas;
