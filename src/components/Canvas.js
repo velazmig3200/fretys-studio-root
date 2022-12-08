@@ -1,7 +1,7 @@
 import React from "react";
 import cc from "./styles/classChain";
 
-function Canvas({ strings, activeS, noteVal, canvasRef }) {
+function Canvas({ strings, activeString, inputBarVal, canvasRef }) {
 	let elements = [];
 
 	//loop through the strings
@@ -11,11 +11,14 @@ function Canvas({ strings, activeS, noteVal, canvasRef }) {
 				key={i}
 				className={cc(
 					"canvas",
-					`canvas ${activeS == strings[i].name}?active 
+					`canvas ${activeString == strings[i].name}?active 
                     ${strings[i].name.length < 2}?margin`
 				)}>
 				{strings[i].name}|-{strings[i].tab}
-				{activeS == strings[i].name && noteVal}|
+				<span style={{ color: "var(--highlight2)" }}>
+					{activeString == strings[i].name && inputBarVal}
+				</span>
+				|
 			</p>
 		);
 	}

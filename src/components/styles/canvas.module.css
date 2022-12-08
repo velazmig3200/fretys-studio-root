@@ -45,13 +45,16 @@ section {
 	margin-bottom: 0.3rem;
 }
 .inputNotes:focus {
-	background-color: rgba(180, 0, 0, 0.5);
+	background-color: var(--hot);
 	outline: 0.1rem solid var(--highlight);
 	color: white;
 }
 
 .canvasContainer {
 	overflow-x: auto;
+	padding: 0.2rem 0;
+	background-color: var(--mainA);
+	border-radius: 0.6rem;
 }
 .canvas {
 	/*spacing*/
@@ -66,7 +69,9 @@ section {
 	transition: all 0.7s;
 }
 .active {
-	background-color: var(--dark);
+	/* background-color: var(--darkGray); */
+	background-color: var(--hot);
+	outline: 1px solid var(--highlight);
 	text-shadow: 5px 5px 2px black;
 }
 .margin {
@@ -83,6 +88,10 @@ section {
 	/*attr*/
 	background-color: var(--darkGray);
 	border-radius: 0.2rem;
+}
+.legendContainer {
+	display: grid;
+	grid-template-columns: auto auto;
 }
 .legendContainer > p {
 	margin: 0.3rem 0;

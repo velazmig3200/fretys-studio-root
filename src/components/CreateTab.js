@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import cc from "./styles/classChain";
 
-function CreateTab({ setActiveS, setStrings }) {
+function CreateTab({ setActiveString, setStrings }) {
 	const [value, setValue] = useState("");
 
 	return (
@@ -25,7 +25,7 @@ function CreateTab({ setActiveS, setStrings }) {
 						}
 					}
 					setStrings(newStrings);
-					setActiveS(newStrings[newStrings.length - 1].name);
+					setActiveString(newStrings[newStrings.length - 1].name);
 				}}>
 				Create New Tab (lose previous data?)
 			</button>

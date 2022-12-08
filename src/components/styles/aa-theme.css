@@ -9,6 +9,7 @@
 	--highlightA: hsla(340, 42%, 28%, 0.9);
 	/* --highlight2: hsl(60, 100%, 71%);  */
 	--highlight2: hsl(59, 100%, 70%);
+	--hot: hsl(0, 100%, 15%);
 
 	--black: #000;
 	--white: hsl(60, 100%, 98%);
